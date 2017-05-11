@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Browser(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="Functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="webDriverQuestion.Question_5_CrossBrowserTesting">
+        <methods>
+          <include name="getCurrentURL" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- webDriverQuestion.Question_5_CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+  <test name="ChromeTest">
+  	<parameter name="Browser" value="Chrome"></parameter>
+  	<groups>
+  	<run>
+  	<include name="Regression"></include>
+  	</run>
+  	</groups>
     <classes>
       <class name="webDriverQuestion.Question_5_CrossBrowserTesting"/>
     </classes>
   </test> <!-- Test -->
+ 
+
+  <test name="IETest">
+  	<parameter name="Browser" value="IE"></parameter>
+  	<groups>
+  	<run>
+  	<include name="Functional"></include>
+  	</run>
+  	</groups>
+    <classes>
+      <class name="webDriverQuestion.Question_5_CrossBrowserTesting"/>
+    </classes>
+  </test> 
+ 
+ 
+ <!-- Test -->
+  <test name="Browser">
+  	<parameter name="Browser" value="firefox"></parameter>
+  	<groups>
+  	<run>
+  	<include name="Functional"></include>
+  	</run>
+  	</groups>
+    <classes>
+      <class name="webDriverQuestion.Question_5_CrossBrowserTesting"/>
+    </classes>
+  </test> 
+  
+   
 </suite> <!-- Suite -->
